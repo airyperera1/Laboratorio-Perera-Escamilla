@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --ff-regular: 'Roboto', sans-serif;;
+    --fw-light: 300;
+    --fw-stardard:400;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
 *{
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: var(--ff-regular);
 }
 /* Estilos para los contenedores principales */
 .container {
@@ -24,98 +35,111 @@ h1, h2, h3 {
     color: #000;
 }
 
-.body {
-    font-family: 'Roboto', sans-serif;
+body {
     color: #000;
     background: #e8f0f7;
-    padding-top: 60px;
    
 }
 
-/* Estilos para la barra de navegación y banner */
-.contenedor{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-.bg_animate{
-    width: 100%;
-    height: 100vh;
-    background:linear-gradient(135deg, #172a74, #21a9af);
-    background-color: #184e8e;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Estilos para la barra de navegación superior (Información de contacto) */
-.top-navbar {
-    background-color: #000;
+.navbar-container{
+    display: grid;
+    grid-template-rows: auto;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
 }
 
-.top-navbar .navbar-text {
-    color: #fff;
-    margin-right: 15px;
+.icons { 
+    color: rgb(202, 202, 202);
+    margin-top: .2rem;
+    margin-right: -.25rem;
+}
+/* Estilos generales para la barra de navegación */
+.navbar-top {
+    background-color: #333;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3rem;
+    height: 2rem;
+  }
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+   
+  }
+
+.navbar-item {
+    padding-right: 15px;
 }
 
-/* Estilos para la barra de navegación inferior (Menú principal) */
-.bottom-navbar {
-    background-color: #007bff;
-    color: #fff;
+.navbar-item a {
+    color: #c4c4c4; /* Color de texto */
+    text-decoration: none;
+    padding: 10px;
+    user-select: none; /* Evitar el resaltado de texto */
+  }
+
+  .navbar-link:hover {
+    color: #fff; /* Cambiar el color de texto a blanco */
+    text-decoration: none; /* Evitar subrayado */
+    pointer-events: pointer; /* Evitar el efecto de hipervínculo */
+    cursor: pointer;
+  }
+
+  #home-icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+  }
+  
+  .navbar-bottom {
+    background-color: #292dff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+    height: 2rem;
+  }
+
+.navbar-item {
+    padding-right: 15px;
+}
+
+.navbar-item2 a {
+    color: #ffffff; /* Color de texto */
+    text-decoration: none;
+    padding: 10px;
+    user-select: none; /* Evitar el resaltado de texto */
+  }
+
+  .navbar-link2:hover {
+    color: #fff; /* Cambiar el color de texto a blanco */
+    text-decoration: none; /* Evitar subrayado */
+    pointer-events: pointer; /* Evitar el efecto de hipervínculo */
+    cursor: pointer;
+    opacity: 60%;
+  }
+
+#home {
+    margin-right: 46.35rem;
+    font-weight: var(--fw-bold);
+    padding-left: 1.15rem;
+
     
 }
 
-.bottom-navbar .navbar-brand {
-    font-weight: bold;
-}
-
-.bottom-navbar .nav-link {
-    color: #fff;
-}
-
-.bottom-navbar .navbar-toggler-icon {
-    filter: invert(100%);
-}
-.bottom-navbar .nav-item {
-    padding: 0 15px;
-}
-.bottom-navbar .nav-item:not(:last-child) {
-    margin-right: 15px;
-}
-
-
-
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-.banner-title h2{
-    color: #fff;
-    font-size: 60px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-.banner-title .iniciar{
-    color: #fff;
-    font-size: 20px;
+#home:hover {
     text-decoration: none;
-    display: inline-block;
-    background-color: #1a2849;
-    padding: 20px;
+    color: #ffffff;
+    cursor: pointer;
 }
-.banner-img{
-    animation: movimiento 2.5s linear infinite;
-}
-.banner-img img{
-    width: 600px;
-    display: block;
-}
+
 /*burbujas*/
 .burbuja{
     width: 80px;
@@ -277,14 +301,11 @@ footer p{
 }
 .about-item hr{
     width: 46px;
-    height: 3px;
     background-color: #5fbff9;
     margin: 0 auto;
     border: none;
 }
-.about-item p{
-    margin-top: 20px;
-}
+
 .about-item:hover{
     background-color: #5fbff9;
 }
