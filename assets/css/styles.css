@@ -23,7 +23,7 @@ h1, h2, h3 {
 body {
     color: #000;
     background: #e8f0f7;
-
+    overflow: hidden;
    
 }
 
@@ -44,7 +44,8 @@ body {
 }
 /* Estilos generales para la barra de navegación */
 .navbar-top {
-    background-color: #333;
+    background: rgb(0,5,31);
+    background: linear-gradient(90deg, rgba(0,5,31,1) 0%, rgba(59,59,59,1) 63%, rgba(148,148,148,1) 100%);
     display: flex;
     justify-content: left;
     align-items: center;
@@ -85,7 +86,8 @@ body {
   }
   
   .navbar-bottom {
-    background-color: #292dff;
+    background: rgb(0,10,65);
+    background: linear-gradient(90deg, rgba(0,10,65,1) 0%, rgba(20,20,94,1) 49%, rgba(0,5,84,1) 100%);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -129,10 +131,73 @@ body {
 /*Banner*/
 
 .contenedor {
-    display: grid;
-    width: 100vh;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 65vh;
+    background-color: #292dff;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
+
+.texto-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+    height: 100%;
+ 
+}
+
+.titulo-banner {
+    display: flex;
+    color: rgba(255, 255, 255, 0.911);
+    padding-top: 3%;
+    text-align: center;
+    justify-content: center;
+    font-weight: var(--fw-bold);
+}
+
+.parrafo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-right: 15%;
+    padding-left: 15%;
+
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-banner {
+    
+    height: 45px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d3d3de8;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(105, 73, 73, 0.15);
+    cursor: pointer;
+  
+}
+
+.button-banner:hover {
+    background-color: #3d3d3da2;
+    transition: 500ms;
+    color:rgba(255, 255, 255, 0.397);
+}
+
+
+
 
 
 /*burbujas*/
