@@ -154,6 +154,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0b5eb', endColorstr='#c9f0e4',GradientType=1 ); /* IE6-9 */
     width: 100%;
     padding: 2em 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
 }
 @media screen and (max-width: 567px) {
     .banner {
