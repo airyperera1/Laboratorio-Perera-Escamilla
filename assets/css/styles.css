@@ -14,26 +14,6 @@
     box-sizing: border-box; 
     font-family: var(--ff-regular);
 }
-/* Estilos para los contenedores principales */
-.container {
-    margin-top: 20px;
-}
-
-/* Estilos para botones y enlaces */
-.btn{
-    padding: .5em 1.5em;
-    border-radius: 2em;
-    box-shadow: 5px 5px 5px rgba(105, 73, 73, 0.15);
-}
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
 
 /* Estilos para los títulos */
 h1, h2, h3 {
@@ -43,13 +23,14 @@ h1, h2, h3 {
 body {
     color: #000;
     background: #e8f0f7;
+
    
 }
 
 .navbar-container{
     display: grid;
     grid-template-rows: auto;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,29 +127,13 @@ body {
 }
 
 /*Banner*/
-.banner{
-    background: #a0b5eb; /* Old browsers */ 
-    background: -moz-linear-gradient(left, #a0b5eb 0%, #c9f0e4 100%); /* FF3.6-15 */ 
-    background: -webkit-linear-gradient(left, #a0b5eb 0%,#c9f0e4 100%); /* Chrome10-25,Safari5.1-6 */ 
-    background: linear-gradient(to right, #a0b5eb 0%,#c9f0e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0b5eb', endColorstr='#c9f0e4',GradientType=1 ); /* IE6-9 */
-    width: 100%;
-    padding: 2em 0;
+
+.contenedor {
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    width: 100vh;
+    grid-template-columns: 50% 50%;
 }
-@media screen and (max-width: 567px) {
-    .banner {
-      text-align: center;
-    }
-  }
-.row{
-    align-items:center;
-}
-.banner h1{
-    text-shadow: 1px 1px 2px #7c7c7c;
-    color: #fff;
-}
+
 
 /*burbujas*/
 .burbuja{
@@ -285,11 +250,6 @@ body {
 
 
 
-/* Estilos para los servicios y secciones */
-.card {
-    margin-bottom: 20px;
-}
-
 /* Estilos para el pie de página */
 footer {
     background-color: #212226;
@@ -297,57 +257,4 @@ footer {
 }
 footer p{
     color: #fff;
-}
-
-/*Estilos para la seccion a cerca de*/
-.about-1{
-    margin: 30px;
-    padding: 5px;
-}
-.about-1 h1{
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-.about-1 p{
-    text-align: center;
-    padding: 3px;
-    color: #fff;
-}
-.about-item{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: white;
-    padding: 80px,30px;
-    box-shadow: 0 0 9px rgb(0, 0, 0, .6);
-}
-.about-item i{
-    font-size: 43px;
-    margin:0;
-}
-.about-item h3{
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-.about-item hr{
-    width: 46px;
-    background-color: #5fbff9;
-    margin: 0 auto;
-    border: none;
-}
-
-.about-item:hover{
-    background-color: #5fbff9;
-}
-.about-item:hover i, .about-item:hover h3, .about-item:hover p{
-    color: #fff;
-}
-.about-item:hover hr{
-    background-color: #fff;
-}
-.about-item:hover i{
-    transform: translateY(-20px);
-}
-.about-item:hover i, .about-item:hover h3, .about-item:hover hr{
-    transition: all 400ms ease-in-out;
 }
