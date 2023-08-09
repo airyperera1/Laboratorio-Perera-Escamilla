@@ -18,7 +18,7 @@
 
 body {
     background: #ffffff;
-    overflow: hidden;
+
    
 }
 
@@ -166,11 +166,6 @@ body {
 }
 
 
-
-
-
-
-
 /*burbujas*/
 .burbuja{
     width: 80px;
@@ -283,13 +278,94 @@ body {
    } 
 }
 
+/* About us Section */
 
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(129, 129, 250, 0.644);
+    
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-size:22px;
+    padding-left: 30%;
+    padding-right: 30%;
+    position: relative;
+    color: white;
+    line-height: 1.7;
+
+
+}
+
+.about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.about-us img {
+    width: 300px; /* Ajusta la imagen al 100% del ancho del contenedor */
+    height: 300px; /* Ajusta la imagen al 100% de la altura del contenedor */
+    border-radius: 50% 100% 200% ;
+
+  }
+
+  /* Result Section */
+
+  .result-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    height: 60vh;
+    width: 100%;
+ 
+}
+
+.result-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-size:22px;
+    padding-left: 30%;
+    padding-right: 30%;
+    position: relative;
+    line-height: 1.7;
+
+
+}
+
+.result-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.result-us img {
+    width: 300px; /* Ajusta la imagen al 100% del ancho del contenedor */
+    height: 300px; /* Ajusta la imagen al 100% de la altura del contenedor */
+    border-radius: 50% 100% 200% ;
+
+  }
 
 
 /* Estilos para el pie de página */
 footer {
     background-color: #212226;
     padding: 20px;
+    position:relative;
 }
 footer p{
     color: #fff;
